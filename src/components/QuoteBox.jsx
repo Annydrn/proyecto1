@@ -19,7 +19,10 @@ return (
     <p className='card_quote'> <span>&#34;</span> {randomQuote.quote} </p>
     <h1 className='card_author'>{randomQuote.author}</h1> 
     <img className='photo_author' src={randomQuote.img} alt="" />
-    
+        <button 
+    className='card_btn' 
+    style={backgroundObj}
+    onClick={getRandomAll}> Next  </button>
     </article>
 )
 }
