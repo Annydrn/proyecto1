@@ -19,21 +19,27 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    background-color: azure;
+    position:fixed;
+    background-image:url(./utils/img/annie-spratt-OZ2BNYfF_xM-unsplash.jpg) ;  
+    background-position: center ;
+    background-size: 1rem;
+    background-size: cover;
     padding: 35px;
-    /* padding-top: 20px; */
     border-radius: 20px;
-    box-shadow: 3px 3px 20px black;
-    border: 10px black;
+    box-shadow: 10px 10px 80px rgb(114, 113, 113);
+    border: 7px double rgb(129, 126, 126);
     max-width: 30rem;
     min-width: 30rem;
     min-height: 25rem;
+    z-index: 1;
 }
+
 
 .card_btn{
     color: white ;
@@ -41,23 +47,34 @@ article{
     border: none;
     aspect-ratio: 1;
     border-radius: 50%;
+    border: 7px double rgb(129, 126, 126);
     transition: filter 100ms ease, transform 100ms ease;
     max-width: 5rem;
+    z-index: 101;
+    box-shadow: 10px 10px 15px rgb(114, 113, 113);
+
+
 }
 
 .card_btn:hover{
-    filter: brightness(1.3);
+    filter:brightness(90%);
     transform: scale(1.25);
     transition: filter 200ms ease, transform 200ms ease;
+
     }
 
 .card_quote{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     font-family: 'Lobster', cursive;
-    font-size: 25px;
+    font-size: 2rem;
     padding-bottom: 1rem;
+    z-index: 150;
+    filter:opacity(1.5);
+
+
 }
 
 span{
@@ -69,26 +86,23 @@ padding-right: 2rem;
     margin-left: auto;
     width: max-content;
     font-family: 'Dancing Script', cursive;   
-    font-size: 30px;
-    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    padding-bottom: 0.3rem;
+    z-index: 150;
+    filter:saturate(2);
+
 }
 
 .photo_author{
-
     transform: translate(100%,9%);
     max-width: 10rem;
     border-radius: 50%;
-    opacity: 0.45;
-}
-
-@keyframes machine{
-    from{
-        width: 100%;
-    }
-    to{
-        width: 100%;
-    }
+    z-index: 100;
+    filter:contrast(0.85) grayscale(100%);
+    box-shadow: 10px 10px 12px rgb(114, 113, 113);
 
 }
+
+
 
 
